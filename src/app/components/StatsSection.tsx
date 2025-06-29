@@ -4,6 +4,7 @@
 import { motion } from 'framer-motion';
 import { FaAward, FaGlobe, FaLeaf, FaBuilding, FaUsers, FaUserTie } from 'react-icons/fa';
 import Link from 'next/link';
+import AnimatedCounter from './AnimatedCounterStats';
 
 const StatsSection = () => {
   // Animasi untuk container
@@ -82,14 +83,7 @@ const StatsSection = () => {
                 <FaBuilding className="text-3xl text-teal-400" />
               </div>
               
-              <motion.div 
-                className="text-5xl font-bold text-white mb-4"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.3, duration: 0.5 }}
-              >
-                600+
-              </motion.div>
+              <AnimatedCounter target={600} />
               
               <h3 className="text-xl font-semibold text-teal-400 mb-3">Completed Projects</h3>
               
@@ -118,14 +112,7 @@ const StatsSection = () => {
                 <FaUsers className="text-3xl text-teal-400" />
               </div>
               
-              <motion.div 
-                className="text-5xl font-bold text-white mb-4"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-              >
-                240+
-              </motion.div>
+              <AnimatedCounter target={240} />
               
               <h3 className="text-xl font-semibold text-teal-400 mb-3">Global Clients</h3>
               
@@ -154,14 +141,7 @@ const StatsSection = () => {
                 <FaUserTie className="text-3xl text-teal-400" />
               </div>
               
-              <motion.div 
-                className="text-5xl font-bold text-white mb-4"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.7, duration: 0.5 }}
-              >
-                186
-              </motion.div>
+              <AnimatedCounter target={186} />
               
               <h3 className="text-xl font-semibold text-teal-400 mb-3">Expert Team</h3>
               
